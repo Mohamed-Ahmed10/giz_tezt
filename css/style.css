@@ -1,0 +1,88 @@
+body {
+    height: 7000px;
+}
+
+.parent {
+    background-color: #080;
+
+    overflow: hidden;
+}
+
+.parent .child {
+    background-color: #F00;
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+    float: left;
+    width: 30%;
+}
+
+.clear {
+    clear: both
+}
+
+.great {
+    height: 400px;
+    width: 400px;
+    background-color: #e7e7e7;
+}
+
+.parent_position {
+    height: 200px;
+    width: 200px;
+    background-color: #00F;
+
+}
+
+.position {
+    background-color: #F00;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.position2 {
+    position: absolute;
+    background-color: #00F;
+    top: 0;
+    right: 0;
+}
+
+.over {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    overflow: auto;
+}
+
+.transition {
+    height: 200px;
+    width: 200px;
+    background-color: #00F;
+    transition: 1s all ease-in-out;
+    -webkit-transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+    -ms-transition: 1s all ease-in-out;
+    -o-transition: 1s all ease-in-out;
+}
+
+.transition:hover {
+    width: 300px;
+}
+
+@media (max-width:700px) {
+    .child {
+        width: 100%;
+    }
+}
+
+.parent_flex .child {
+    background-color: #F00;
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+}
